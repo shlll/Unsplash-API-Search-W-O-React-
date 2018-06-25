@@ -1,4 +1,3 @@
-//Q1.
 const myAPIKeyHere = "8338ac00f3fe8771eadc5eb64e67021842617a363f82ae304f7719c9264e4ac5";
 //This is my API KEY.
 
@@ -23,7 +22,9 @@ fetch(`https://api.unsplash.com/search/collections?query=thearchitecturecatwalk`
 fetch(`https://api.unsplash.com/collections/2148809/photos?query=thearchitecturecatwalk`, title).then(response => response.json())
     .then(outputImages) //Using the collection and then search the website called "https://unsplash.com/" to find the theme photos.
 
-//Q2.
+
+
+
 fetch(`https://jsonplaceholder.typicode.com/photos`).then(response => response.json()) //Fetching the photo ID.
     .then(json => {
         const photoElement2 = document.querySelector("#images");
@@ -36,7 +37,7 @@ fetch(`https://jsonplaceholder.typicode.com/photos`).then(response => response.j
         } //Searching for the ID3's all of the albums.
     })
 
-//Q3.
+
 fetch('https://jsonplaceholder.typicode.com/users', {
     method: 'DELETE'
 })
